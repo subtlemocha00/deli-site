@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+:root {
+	font-size: 16px;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	--bg-color-main: #333333;
+	--txt-color-title: #50f150;
+	--txt-color-main: #ffffff;
+	/* --txt-color-menu: #000000; */
+	--overlay-color: 0, 0, 0;
+	--bg-color-main-opacity: 0.6;
+	--title-font: "Permanent Marker", cursive;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--bg-color-main);
+	color: var(--txt-color-main);
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+.innerWrapper {
+	display: block;
+	z-index: 1;
+	min-height: 100vh;
+	animation: fadeIn 2s ease-out;
+}
+
+#backHome {
+	color: var(--txt-color-main);
+}
+
+#titleDiv {
+	font-family: var(--title-font);
+	text-shadow: 0px 5px 5px rgba(0, 0, 0, 1);
+}
+.subtitle {
+	font-size: 1.75rem;
+}
+
+#menuBtn {
+	font-family: Arial, Helvetica, sans-serif;
+	color: var(--txt-color-main);
+	box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.5);
+	background-color: purple;
+}
+
+#deliNav {
+	background: linear-gradient(
+		90deg,
+		rgb(35, 35, 35),
+		rgb(0, 0, 0),
+		rgb(35, 35, 35)
+	);
+	color: var(--txt-color-main);
+	box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+#titleSection,
+#menuSection {
+	color: var(--txt-color-main);
+	height: 125vh;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.3) inset;
+}
+#titleSection {
+	background-image: url("./assets/pizza_bg.png");
+}
+#menuSection {
+	background-image: url("./assets/hourglass_capitalism_b.png");
+	height: auto;
+}
+
+/* #intro-photo::before {
+	content: "";
+	position: absolute;
+	border-style: solid;
+} */
+
+#menuBackground {
+	background: rgba(var(--overlay-color), var(--bg-color-main-opacity));
+	box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.75);
+	border-radius: 20px;
+}
+
+#top {
+	position: relative;
+}
+
+#aboutTitle {
+	position: relative;
+	top: -4px;
+}
+#aboutSection {
+	height: 100vh;
+}
+
+.titleDiv {
+	font-size: 4rem;
+	color: var(--txt-color-title);
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
